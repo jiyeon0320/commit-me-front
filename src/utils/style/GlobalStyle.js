@@ -1,5 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
+html, body{
+  font-size: 62.5%; //1rem = 10px;
+  line-height: 1.285; //1rem = 10px;
+}
 html,
 body,
 div,
@@ -84,7 +88,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  /* font-size: 100%; */
   font: inherit;
   vertical-align: baseline;
 }
@@ -124,6 +128,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
+button{
+  background: inherit; 
+  border:none; 
+  box-shadow:none; 
+  border-radius:0; 
+  padding:0; 
+  overflow:visible; 
+  cursor:pointer;
+}
 `;
 export default GlobalStyle;
