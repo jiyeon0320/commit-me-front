@@ -24,16 +24,35 @@ declare module 'styled-components' {
       redText: string;
       server_orange: string;
     };
+    device:{
+      mobileS:string;
+      mobileM:string;
+      mobileL:string;
+      tabletS:string;
+      tabletM:string;
+      tabletL:string;
+      etcA:string;
+      etcB:string;
+    };
+    deviceSize:{
+      mobileS:string;
+      mobileM:string;
+      mobileL:string;
+      tabletS:string;
+      tabletM:string;
+      tabletL:string;
+      etcA:string;
+      etcB:string;
+    };
   }
 }
 declare module 'react' {
   interface HTMLAttributes<T> extends DOMAttributes<T> {
-    css?: CSSProp;
+    // css?: CSSProp;
     del?: boolean;
     view?: boolean;
     layout?: boolean;
     color?: string;
-    left?: string;
     fullSize?: string;
     name?: string;
     width?: string | undefined;

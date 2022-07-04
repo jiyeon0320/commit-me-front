@@ -1,6 +1,6 @@
 import { DefaultTheme } from 'styled-components';
 
-const calcRem = (size: number) => `${size / 16}rem`;
+const calcRem = (size: number) => `${size / 10}rem`;
 
 const fontSizes = {
   small: calcRem(12),
@@ -14,32 +14,39 @@ const fontSizes = {
 //   base: calcRem(10),
 //   large: calcRem(12),
 // };
-// const deviceSizes = {
-//   mobileS: '320px',
-//   mobileM: '375px',
-//   mobileL: '450px',
-//   tablet: '768px',
-//   tabletL: '1024px',
-// };
+const deviceSizes = {
+  mobileS: '320px',
+  mobileM: '375px',
+  mobileL: '450px',
+  tabletS: '768px',
+  tabletM: '1024px',
+  tabletL: '1280px',
+  etcA: '29em',
+  etcB: '35em',
+};
 
-// const device = {
-//   mobileS: `only screen and (max-width: ${deviceSizes.mobileS})`,
-//   mobileM: `only screen and (max-width: ${deviceSizes.mobileM})`,
-//   mobileL: `only screen and (max-width: ${deviceSizes.mobileL})`,
-//   tablet: `only screen and (max-width: ${deviceSizes.tablet})`,
-//   tabletL: `only screen and (max-width: ${deviceSizes.tabletL})`,
-// };
+const device = {
+  mobileS: `screen and (max-width: ${deviceSizes.mobileS})`,
+  mobileM: `screen and (max-width: ${deviceSizes.mobileM})`,
+  mobileL: `screen and (max-width: ${deviceSizes.mobileL})`,
+  tabletS: `screen and (max-width: ${deviceSizes.tabletS})`,
+  tabletM: `screen and (max-width: ${deviceSizes.tabletM})`,
+  tabletL: `screen and (max-width: ${deviceSizes.tabletL})`,
+  etcA: `screen and (min-width: ${deviceSizes.etcA})`,
+  etcB: `screen and (min-width: ${deviceSizes.etcB})`,
+};
+
 const colors = {
   black: '#1B1B1B',
-  darkNavy: '#555c66',
-  blueText: '#1C5085',
+  white:'#fff',
+  gray_1:'#e5e5e5',
   blueMain: '#46cdff',
-  blue_1: '#F0F5F9',
+  blue_1: '#18A0FB',
   blue_2: '#84b8e0',
   blue_3: '#D9E9F6',
   blue_4: '#c1d3e8',
   blue_5: '#3397E8',
-  gray_1: '#f7f7f7',
+  // gray_1: '#f7f7f7',
   gray_2: '#686868',
   gray_3: '#c4c4c4',
   gray_4: '#e8e8e8',
@@ -48,4 +55,4 @@ const colors = {
   server_orange: '#FF8A65',
 };
 
-export const theme: DefaultTheme = { fontSizes, colors };
+export const theme: DefaultTheme = { fontSizes, colors, deviceSizes, device };
