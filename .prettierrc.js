@@ -8,4 +8,6 @@ module.exports = {
   arrowParens: 'avoid', // Arrow 함수에서 하나의 매개변수를 받을때는 괄호를 생략
   endOfLine: 'auto', // 하나의 줄이 끝났다는걸 표시하기위해 사용함
   htmlWhitespaceSensitivity: 'ignore',
+  jsxSingleQuote: true,
+  bracketSpacing: true
 };

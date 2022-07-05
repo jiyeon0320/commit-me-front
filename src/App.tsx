@@ -4,6 +4,7 @@ import GlobalStyle from './utils/style/GlobalStyle';
 import { theme } from './utils/style/theme';
 import Weekly from './component/Weekly';
 import Footer from '@/component/footer';
+import RankingView from '@/component/ranking';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       </article>
       <article>
         <h2>랭킹</h2>
+        <RankingView />
       </article>
       <article>
         <h2>댓글</h2>

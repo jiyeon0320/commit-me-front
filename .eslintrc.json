@@ -2,15 +2,20 @@
   "root": true,
   "env": {
     "browser": true,
-    "node": true
+    "es2021": true
+    // "node": true
   },
   "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
     // "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended"
+    "prettier"
   ],
-  "plugins": ["prettier", "@typescript-eslint"],
+  "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
   "rules": {
+    "react/react-in-jsx-scope": "off",
+    "no-duplicate-imports": "error",
     "prettier/prettier": [
       "error",
       {
@@ -18,9 +23,19 @@
         "singleQuote": true
       }
     ],
-    "@typescript-eslint/no-var-requires":false
+    "@typescript-eslint/no-var-requires": false
   },
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "parser": "@typescript-eslint/parser" // TS를 ESLint 인식할 수 있는 형태 EStree로 변환
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
   }
 }

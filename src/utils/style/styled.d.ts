@@ -24,25 +24,25 @@ declare module 'styled-components' {
       redText: string;
       server_orange: string;
     };
-    device:{
-      mobileS:string;
-      mobileM:string;
-      mobileL:string;
-      tabletS:string;
-      tabletM:string;
-      tabletL:string;
-      etcA:string;
-      etcB:string;
+    device: {
+      mobileS: string;
+      mobileM: string;
+      mobileL: string;
+      tabletS: string;
+      tabletM: string;
+      tabletL: string;
+      etcA: string;
+      etcB: string;
     };
-    deviceSize:{
-      mobileS:string;
-      mobileM:string;
-      mobileL:string;
-      tabletS:string;
-      tabletM:string;
-      tabletL:string;
-      etcA:string;
-      etcB:string;
+    deviceSize: {
+      mobileS: string;
+      mobileM: string;
+      mobileL: string;
+      tabletS: string;
+      tabletM: string;
+      tabletL: string;
+      etcA: string;
+      etcB: string;
     };
   }
 }

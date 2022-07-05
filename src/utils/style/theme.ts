@@ -38,10 +38,10 @@ const device = {
 
 const colors = {
   black: '#1B1B1B',
-  white:'#fff',
-  gray_1:'#e5e5e5',
-  blueMain: '#46cdff',
+  white: '#fff',
+  gray_1: '#e5e5e5',
   blue_1: '#18A0FB',
+  blueMain: '#46cdff',
   blue_2: '#84b8e0',
   blue_3: '#D9E9F6',
   blue_4: '#c1d3e8',
