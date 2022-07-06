@@ -15,6 +15,9 @@ export default ButtonRectang;
 
 const Button = styled.button`
   width: 10rem;
-  background-color: ${props => (props.color ? '  blue' : props.color)};
-  color: ${props => (props.color ? props.color : 'blue')};
+  background-color: ${props => (props.color ? props.theme.colors.blue_1 : '#fff')};
+  color: ${props => (props.color ? props.color : props.theme.colors.blue_1)};
+  border: ${props => `1px solid ${props.theme.colors.blue_1}`};
+  border-radius: 3px;
+  padding: 0.6rem;
 `;

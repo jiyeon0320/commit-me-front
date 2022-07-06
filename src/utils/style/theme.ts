@@ -36,19 +36,18 @@ const device = {
   etcB: `screen and (min-width: ${deviceSizes.etcB})`,
 };
 
-const colors = {
+const colors: Object = {
   black: '#1B1B1B',
   white: '#fff',
   gray_1: '#e5e5e5',
+  gray_2: '#c4c4c4',
   blue_1: '#18A0FB',
   blueMain: '#46cdff',
   blue_2: '#84b8e0',
   blue_3: '#D9E9F6',
   blue_4: '#c1d3e8',
   blue_5: '#3397E8',
-  // gray_1: '#f7f7f7',
-  gray_2: '#686868',
-  gray_3: '#c4c4c4',
+
   gray_4: '#e8e8e8',
   gray_5: '#aaaaaa',
   redText: '#ff1900',
