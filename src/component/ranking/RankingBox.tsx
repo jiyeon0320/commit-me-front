@@ -24,7 +24,7 @@ const Box = styled.div`
   font-size: 2rem;
   border-radius: 0.8rem;
   padding: 1rem 2rem;
-  margin: 1rem 2rem;
+  margin: 1rem 0;
   .text_left {
     display: flex;
     align-items: center;

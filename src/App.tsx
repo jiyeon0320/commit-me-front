@@ -1,30 +1,51 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import GlobalStyle from './utils/style/GlobalStyle';
 import { theme } from './utils/style/theme';
 import Weekly from './component/Weekly';
 import Footer from '@/component/footer';
 import RankingView from '@/component/ranking';
+import Title from '@/component/Title';
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <header>commit, ME!</header>
-      <article>
-        <h2>출석 체크</h2>
-        <Weekly />
-      </article>
-      <article>
-        <h2>랭킹</h2>
-        <RankingView />
-      </article>
-      <article>
-        <h2>댓글</h2>
-      </article>
-      <Footer />
+      <MainContainer>
+        <header>commit, ME!</header>
+        <div>
+          <article>
+            <Title>출석 체크</Title>
+            <Weekly />
+          </article>
+        </div>
+        <div className='gray_article'>
+          <article className='gray_article'>
+            <RankingView />
+          </article>
+        </div>
+        <div>
+          <article>
+            <Title>댓글</Title>
+          </article>
+        </div>
+        <Footer />
+      </MainContainer>
     </ThemeProvider>
   );
 };
 
 export default App;
+
+const MainContainer = styled.div`
+  /* background-color: red; */
+
+  article {
+    margin: 0 auto;
+    width: 120rem;
+    padding: 1rem 2rem;
+  }
+  .gray_article {
+    background-color: ${props => props.theme.colors.gray_1};
+  }
+`;

@@ -5,7 +5,7 @@ const calcRem = (size: number) => `${size / 10}rem`;
 const fontSizes = {
   small: calcRem(12),
   base: calcRem(14),
-  medium: calcRem(14.5),
+  medium: calcRem(15),
   large: calcRem(16),
 };
 
