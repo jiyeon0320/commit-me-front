@@ -4,9 +4,14 @@ import styled from 'styled-components';
 type Props = {
   children: string;
   style?: React.CSSProperties;
+  onClick?: () => void;
 };
-const ButtonCircle: React.FC<Props> = ({ children, style }) => {
-  return <StyledButton style={style}>{children}</StyledButton>;
+const ButtonCircle: React.FC<Props> = ({ children, style, onClick }) => {
+  return (
+    <StyledButton style={style} onClick={onClick}>
+      {children}
+    </StyledButton>
+  );
 };
 
 export default ButtonCircle;
